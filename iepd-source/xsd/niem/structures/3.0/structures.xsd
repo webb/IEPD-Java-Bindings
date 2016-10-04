@@ -12,21 +12,21 @@
    
     <xs:attributeGroup name="SimpleObjectAttributeGroup">
         <xs:attribute ref="structures:id"/>
-        <!--<xs:attribute ref="structures:ref"/>-->
-        <!--<xs:attribute ref="structures:metadata"/>-->
-        <!--<xs:attribute ref="structures:relationshipMetadata"/>-->
-        <!--<xs:anyAttribute namespace="urn:us:gov:ic:ism urn:us:gov:ic:ntk" processContents="lax"/>-->
+        <xs:attribute ref="structures:ref"/>
+        <xs:attribute ref="structures:metadata"/>
+        <xs:attribute ref="structures:relationshipMetadata"/>
+        <xs:anyAttribute namespace="urn:us:gov:ic:ism urn:us:gov:ic:ntk" processContents="lax"/>
     </xs:attributeGroup>
 
     <xs:complexType name="ObjectType" abstract="true">
-        <!--<xs:sequence>-->
-            <!--<xs:element ref="structures:ObjectAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>-->
-        <!--</xs:sequence>-->
+        <xs:sequence>
+            <xs:element ref="structures:ObjectAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
         <xs:attribute ref="structures:id"/>
-        <!--<xs:attribute ref="structures:ref"/>-->
-        <!--<xs:attribute ref="structures:metadata"/>-->
-        <!--<xs:attribute ref="structures:relationshipMetadata"/>-->
-        <!--<xs:anyAttribute namespace="urn:us:gov:ic:ism urn:us:gov:ic:ntk" processContents="lax"/>-->
+        <xs:attribute ref="structures:ref"/>
+        <xs:attribute ref="structures:metadata"/>
+        <xs:attribute ref="structures:relationshipMetadata"/>
+        <xs:anyAttribute namespace="urn:us:gov:ic:ism urn:us:gov:ic:ntk" processContents="lax"/>
     </xs:complexType>
 
     <xs:element name="ObjectAugmentationPoint" abstract="true">
@@ -64,4 +64,5 @@
         <xs:attribute ref="structures:metadata"/>
         <xs:anyAttribute namespace="urn:us:gov:ic:ism urn:us:gov:ic:ntk" processContents="lax"/>
     </xs:complexType>
+
 </xs:schema>
