@@ -3,15 +3,20 @@
    ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
    targetNamespace="http://example.com/message/1.0/"
    version="1"
+   xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
    xmlns:cyfs="http://release.niem.gov/niem/domains/cyfs/3.2/"
    xmlns:message="http://example.com/message/1.0/"
    xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
    xmlns="http://www.w3.org/2001/XMLSchema">
 
    <annotation>
      <documentation
         >This extension schema defines the elements and types needed for the Template IEPD.</documentation>
    </annotation>
+
+   <import namespace="http://release.niem.gov/niem/niem-core/3.0/" schemaLocation="niem/niem-core/3.0/niem-core.xsd"/>
+   <import namespace="http://release.niem.gov/niem/domains/cyfs/3.2/" schemaLocation="niem/domains/cyfs/3.2/cyfs.xsd"/>
 
    <element name="Message" type="message:MessageType">
      <annotation>

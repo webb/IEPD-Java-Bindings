@@ -6,6 +6,6 @@
 -->
 <exchange-types>
 
-    <type name="TemplateExchangeType" uri="http://example.com/template/1.0/" />
+    <type name="MessageType" uri="http://example.com/message/1.0/" />
 
 </exchange-types>
